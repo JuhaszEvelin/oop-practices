@@ -54,7 +54,9 @@ A szimuláció 4 napig tart. Minden nap rátöltünk a robotokra a lentiek szeri
         ◦ Beérkezett áruk mennyisége: 16
 
 A szimulációban résztvevő robotok:
+
     • R2, egy Mac típusú robot 4 egység alap töltöttséggel
     • 3CPO, egy Eco típusú robot 3 egység alap töltöttségi szinttel
     • BB8, egy Pro típusú robot 10 egység alap töltöttséggel
     • E12, egy Eco típus, 4 egység alap töltöttséggel
+
