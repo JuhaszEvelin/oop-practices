@@ -10,20 +10,20 @@ Készítsünk programot, amellyel szimulálni tudjuk a következő feladatot. Eg
 
 A konkrét állatkertben négy fajta állatot tartanak: nyulat, farkast, sünt és medvét, ezek jellemzői a következők: 
 
-    * Nyúl: Hús esetén a súlya eggyel csökken, zöldség esetén kettővel nő, gyümölcs esetén eggyel nő. A túlsúlyosság határa 4.
-    * Farkas: Hús esetén a súlya hárommal nő, zöldség és gyümölcs esetén eggyel csökken. A túlsúlyosság határa 6.
-    * Sün: Hús esetén a súlya eggyel csökken, zöldség esetén nem változik, gyümölcs esetén kettővel nő. A túlsúlyosság határa 5.
-    * Medve: Hús és gyümölcs esetén a súlya eggyel nő, zöldség esetén eggyel csökken. A túlsúlyosság határa 10.
+    • Nyúl: Hús esetén a súlya eggyel csökken, zöldség esetén kettővel nő, gyümölcs esetén eggyel nő. A túlsúlyosság határa 4.
+    • Farkas: Hús esetén a súlya hárommal nő, zöldség és gyümölcs esetén eggyel csökken. A túlsúlyosság határa 6.
+    • Sün: Hús esetén a súlya eggyel csökken, zöldség esetén nem változik, gyümölcs esetén kettővel nő. A túlsúlyosság határa 5.
+    • Medve: Hús és gyümölcs esetén a súlya eggyel nő, zöldség esetén eggyel csökken. A túlsúlyosság határa 10.
 
 A szimuláció 5 napig fog tartani, mely alatt az alábbi módon kapnak ételt az állatok:
 hús, zöldség, hús, gyümölcs, hús
 
 A következő állatok vesznek részt a szimulációban:
     1. Akela a farkas, kezdeti súly: 3
-    1. Balu a medve, kezdeti súly: 4
-    1. Tapsi a nyúl, kezdeti súly: 2
-    1. Brumi a medve, kezdeti súly: 6
-    1. Durum a sün, kezdeti súly: 4
+    2. Balu a medve, kezdeti súly: 4
+    3. Tapsi a nyúl, kezdeti súly: 2
+    4. Brumi a medve, kezdeti súly: 6
+    5. Durum a sün, kezdeti súly: 4
 
 
 
@@ -35,26 +35,26 @@ Készítsünk programot, amellyel szimulálni tudjuk ipari robotok működését
 
 A munkában háromféle robot vesz részt:
 
-    * Mac: Maximális töltési szintje 10, maximális szállítási kapacitása 10 egység, egy egység szállítása eggyel csökkenti a töltési szintet.
-    * Eco: Maximális töltési szintje 4, maximális szállítási kapacitása 6, két egység szállítása eggyel csökkenti a töltési szintet. (Páratlan egység szállításakor a pár nélkül maradó egység is eggyel csökkent, azaz 5 egység esetén 3 lenne a fogyasztás.) 
-    * Pro: Maximális töltési szintje 12, maximális szállítási kapacitása 8. Egy egység szállítása 5 egységig eggyel csökkenti a töltési szintet, az 5 feletti egységek kettővel (Pl. 7 egység esetén 5+4=9 a fogyasztás.) 
+    • Mac: Maximális töltési szintje 10, maximális szállítási kapacitása 10 egység, egy egység szállítása eggyel csökkenti a töltési szintet.
+    • Eco: Maximális töltési szintje 4, maximális szállítási kapacitása 6, két egység szállítása eggyel csökkenti a töltési szintet. (Páratlan egység szállításakor a pár nélkül maradó egység is eggyel csökkent, azaz 5 egység esetén 3 lenne a fogyasztás.) 
+    • Pro: Maximális töltési szintje 12, maximális szállítási kapacitása 8. Egy egység szállítása 5 egységig eggyel csökkenti a töltési szintet, az 5 feletti egységek kettővel (Pl. 7 egység esetén 5+4=9 a fogyasztás.) 
 
 A szimuláció 4 napig tart. Minden nap rátöltünk a robotokra a lentiek szerint:
-    * 1. nap
+    • 1. nap
         ◦ töltés mennyisége: 3
         ◦ Beérkezett áruk mennyisége: 20
-    * 2. nap
+    • 2. nap
         ◦ töltés mennyisége: 2
         ◦ Beérkezett áruk mennyisége: 32
-    * 3. nap
+    • 3. nap
         ◦ töltés mennyisége: 5
         ◦ Beérkezett áruk mennyisége: 20
-    * 4. nap
+    • 4. nap
         ◦ töltés mennyisége: 3
         ◦ Beérkezett áruk mennyisége: 16
 
 A szimulációban résztvevő robotok:
-    * R2, egy Mac típusú robot 4 egység alap töltöttséggel
-    * 3CPO, egy Eco típusú robot 3 egység alap töltöttségi szinttel
-    * BB8, egy Pro típusú robot 10 egység alap töltöttséggel
-    * E12, egy Eco típus, 4 egység alap töltöttséggel
+    • R2, egy Mac típusú robot 4 egység alap töltöttséggel
+    • 3CPO, egy Eco típusú robot 3 egység alap töltöttségi szinttel
+    • BB8, egy Pro típusú robot 10 egység alap töltöttséggel
+    • E12, egy Eco típus, 4 egység alap töltöttséggel
