@@ -8,19 +8,10 @@ public class Eco extends Robot {
         this.maxCapacity = 6;
         this.maxCharge = 4;
         this.type = "ECO";
-        //   this.maxTransportCapacityViaCharge = (this.charge > (maxCapacity / 2)) ? maxCapacity : this.charge * 2;
-    }
+        this.maxTransportCapacityViaCharge = Math.min(Robot.restItem, this.charge*2);
+        this.itemToTransport = Math.min(this.maxTransportCapacityViaCharge, this.maxCapacity);
+        this.batteryDecrease = this.itemToTransport/2;
+     }
 
-    @Override
-    public void transport(int charge, int item) {
-        System.out.print("          started charge: " + this.charge + " ");
 
-        this.charge = ((this.charge + charge) > this.maxCharge ? this.maxCharge : (this.charge + charge));
-        System.out.println(".........................................        total charge: " + this.charge);
-
-        this.maxTransportCapacityViaCharge = item > (this.charge * 2) ? (this.charge * 2) : item;
-        this.itemToTransport = maxTransportCapacityViaCharge > maxCapacity ? maxCapacity : maxTransportCapacityViaCharge;
-        Robot.restItem -= itemToTransport;
-        this.charge -= (itemToTransport / 2);
-    }
 }

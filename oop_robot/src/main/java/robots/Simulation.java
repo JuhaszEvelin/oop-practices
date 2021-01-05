@@ -43,7 +43,8 @@ public class Simulation {
             Robot.restItem += dailyItems;
             for (Robot r : robots) {
 
-                r.transport(dailyTransport[i][0], Robot.restItem);
+                r.transport(dailyTransport[i][0],
+                        Robot.restItem);
                 System.out.println(r.toString());
             }
             System.out.println("----------------------------------------");

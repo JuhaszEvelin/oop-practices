@@ -8,14 +8,30 @@ public class Pro extends Robot {
         this.maxCharge = 12;
         this.type = "PRO";
 
-        //  int maxCapUntil5 = this.charge > maxCapacity ? maxCapacity : this.charge;
-        //int maxCapAfter5 = (this.charge > (maxCapacity / 2)) ? maxCapacity : this.charge * 2;
-        // this.maxTransportCapacityViaCharge = (this.itemToTransport >= 5 && this.charge >= 5) ? maxCapUntil5 : maxCapAfter5;
+        if (Robot.restItem <= 5) {
+            this.maxTransportCapacityViaCharge = Math.min(5, this.charge);
+            this.itemToTransport = Math.min(this.maxTransportCapacityViaCharge, this.maxCapacity);
+            this.batteryDecrease = this.itemToTransport;
+        } else {
+            this.maxTransportCapacityViaCharge = Math.min(5, this.charge);
+            this.batteryDecrease = this.itemToTransport;
+
+            this.itemToTransport = Math.min(this.maxTransportCapacityViaCharge, this.maxCapacity);
+            this.itemToTransport = Math.min(this.maxTransportCapacityViaCharge, this.maxCapacity);
+            Robot.restItem -= this.itemToTransport;
+            this.charge -= this.batteryDecrease;
+
+            this.maxTransportCapacityViaCharge = Math.min(Robot.restItem - 5, this.charge / 2);
+            this.itemToTransport = Math.min(this.maxTransportCapacityViaCharge, this.maxCapacity);
+            this.batteryDecrease = this.itemToTransport * 2;
+
+        }
     }
 
+/*
     @Override
     public void transport(int charge, int item) {
-        System.out.print("          started charge: " + this. charge + " ");
+        System.out.print("          started charge: " + this.charge + " ");
 
         this.charge = ((this.charge + charge) > this.maxCharge ? this.maxCharge : (this.charge + charge));
         System.out.println(".........................................        total charge: " + this.charge);
@@ -33,11 +49,12 @@ public class Pro extends Robot {
             this.charge -= this.itemToTransport;
 
 
-            this.maxTransportCapacityViaCharge = (item-5) > (this.charge / 2) ? (this.charge / 2) : (item-5);
+            this.maxTransportCapacityViaCharge = (item - 5) > (this.charge / 2) ? (this.charge / 2) : (item - 5);
             this.itemToTransport = maxTransportCapacityViaCharge > maxCapacity ? maxCapacity : maxTransportCapacityViaCharge;
             Robot.restItem -= itemToTransport;
             this.charge -= (itemToTransport * 2);
 
         }
     }
+*/
 }
