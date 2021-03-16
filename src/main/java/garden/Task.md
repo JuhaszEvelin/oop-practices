@@ -1,4 +1,4 @@
-## 4. Kertész
+##  Kertész
 Készítsünk programot a következő kertészeti szimulációhoz. Egy kertben különböző növényeket tartanak, amelyeket gondozni kell. A kertész három fajta anyag közül naponta csak egyet adhat az összes növénynek. Az anyagok fajtái: víz, tápoldat, műtrágya. A növények az egyes anyagokra eltérően reagálnak: sorvadnak; tűrik, ekkor nem nőnek; szeretik, ekkor nőnek. Egy növény kipusztulhat, ha sorvadás során a mérete nullára csökken, illetve túlburjánzásban is kipusztulhat, ha túl naggyá válik. A túlburjánzás határa növényfajtánként eltérő. Előfordul, hogy a kertész nem ad nekik tápanyagot, ekkor garantáltan sorvadnak eggyel. A konkrét kertben három fajta növényt termesztenek: kaktuszt, virágot ésbokrot, ezek jellemzői a következők:
 * **Kaktusz:** Víz esetén a mérete eggyel csökken, tápoldat esetén eggyel nő, műtrágya esetén eggyel nő. A túlburjánzás határa 4.
 * **Virág:** Víz esetén a mérete hárommal nő, tápoldat és műtrágya esetén eggyel csökken. A túlburjánzás határa 6.

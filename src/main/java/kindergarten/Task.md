@@ -1,4 +1,4 @@
-## 3. Óvoda
+##  Óvoda
 Készítsünk programot, amellyel szimulálni tudjuk a következő feladatot. Egy óvodában óvónéninek kell gyerekekkel foglalkozni úgy, hogy probléma nélkül teljen az idő. Négyféle tevékenységre lehet az óvodásokat rávenni: ének, labdázás, rajz, tánc. Az egyes gyerekek eltérően reagálnak az egyes tevékenységekre, és ennek megfelelően változik az elégedettségük. Ha egy gyerek elégedettsége nullára csökken, akkor nyafogni kezd, és ha 3 vagy több gyerek nyafog egyszerre, akkor az óvónéni már nem tudja a rendet fenntartani. A gyerekeket három csoportra lehet osztani annak alapján, hogy miként reagálnak az egyes tevékenységekre:
 * **Eleven:** Labdázás esetén az elégedettsége három lesz, tánc esetén nem változik, ének és rajz esetén eggyel csökken.
 * **Zenekedvelő:** Ének esetén az elégedettsége négy lesz, tánc esetén nem változik, labdázás és rajz esetén eggyel csökken.
