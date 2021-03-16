@@ -33,27 +33,21 @@ public class Simulation {
                 new Eco("E12", 4)
         };
 
-
         for (int i = 0; i < dailyTransport.length; i++) {
             int dailyItems = dailyTransport[i][1];
             int dailyCharge = dailyTransport[i][0];
-            System.out.println((i + 1) + ". DAY we give: " + dailyCharge + " charge; " +
-                    dailyItems + " items + " + Robot.restItem + " rest ...................................... " +
-                    "....................................Total items: " + (dailyItems + Robot.restItem));
+            System.out.println(
+                    "< DAY " + (i + 1) + " >");
             System.out.println();
             Robot.restItem += dailyItems;
             for (Robot r : robots) {
-
-                r.transport(dailyTransport[i][0], Robot.restItem);
+                r.transport(dailyCharge, Robot.restItem);
                 System.out.println(r.toString());
-                System.out.println();
             }
-            System.out.println("----------------------------------------");
             System.out.println();
         }
-
-
     }
+
 
 
 }

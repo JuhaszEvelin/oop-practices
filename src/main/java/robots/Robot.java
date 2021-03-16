@@ -18,22 +18,18 @@ public abstract class Robot {
     }
 
     public abstract void transport(int charge, int item);
-    /*{
-        this.itemToTransport = item;
-        this.charge = ((charge + this.charge) > maxCharge) ? maxCharge : (charge + this.charge);
-        restItem = item > maxTransportCapacityViaCharge ? restItem + item - maxTransportCapacityViaCharge : 0;
-        this.charge -= item > maxTransportCapacityViaCharge ? maxTransportCapacityViaCharge : item;
-    }*/
 
     @Override
     public String toString() {
         return
-                name +
-                ": " + type + "    Charge: " + charge +
-                " ;    maxCharge = " + maxCharge +
-                " , maxCapacity = " + maxCapacity +
-                " , maxTransportCapacityViaCharge = " + maxTransportCapacityViaCharge +
-                " , itemToTransport = " + itemToTransport +
-                " ;  restitem  : " + restItem;
+                "<Name: " + name + "> <Type: " + type + "> <Charge: " + charge +
+                        "<MaxCharge: " + maxCharge +
+                        "><MaxCapacity: " + maxCapacity +
+                        "><MaxTransportCapacityViaCharge: " + maxTransportCapacityViaCharge +
+                        "><ItemToTransport: " + itemToTransport +
+                        "><Restitem: " + restItem;
     }
+
+
+
 }
