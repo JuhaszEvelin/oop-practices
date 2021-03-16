@@ -5,7 +5,7 @@ public class Eco extends Robot {
         super(name, charge);
         this.maxCapacity = 6;
         this.maxCharge = 4;
-        this.type = "ECO";
+        this.type = RobotTypes.ECO;
     }
 
     @Override

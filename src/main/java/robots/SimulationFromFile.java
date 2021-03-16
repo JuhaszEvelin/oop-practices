@@ -13,56 +13,56 @@ public class SimulationFromFile {
 
         List<int[]> dailyTransport = getDailyTransport(fileIO);
 
-               /* new int[][]{
-                {3, 20},
-                {2, 32},
-                {5, 20},
-                {3, 16}
-        };*/
-
         List<Robot> robots = getRobots(fileIO);
 
-              /*  new Robot[]{
-                new Mac("R2", 4),
-                new Eco("3CPO", 3),
-                new Pro("BB8", 10),
-                new Eco("E12", 4)
-        };*/
+        StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < dailyTransport.size(); i++) {
             int dailyCharge = dailyTransport.get(i)[0];
             int dailyItems = dailyTransport.get(i)[1];
-            System.out.println(
-                    "< DAY " + (i + 1) + " >");
-            System.out.println();
+            sb.append("< DAY " + (i + 1) + " >" + System.lineSeparator());
             Robot.restItem += dailyItems;
             for (Robot r : robots) {
                 r.transport(dailyCharge, Robot.restItem);
-                System.out.println(r.toString());
+                sb.append(r.toString() + System.lineSeparator());
             }
-            System.out.println();
         }
+
+        String saveToFile = sb.toString();
+        fileIO.writeFile("robotsimulation.txt", saveToFile);
+
+        System.out.println(" ~~~~~~~ Simulation saved to file ~~~~~~~ ");
+
     }
 
     private List<Robot> getRobots(MyFileWriter fileIO) {
         List<Robot> robots = new ArrayList<>();
         List<String> datas = fileIO.readFile("robotfactory.txt");
         for (String data : datas) {
-            String robotType = fileIO.decodeLine(data).get(0);
-            String robotName = fileIO.decodeLine(data).get(0);
-            String robotCharge = fileIO.decodeLine(data).get(0);
+            RobotTypes robotType = RobotTypes.valueOf(fileIO.decodeLine(data).get(0));
+            String robotName = fileIO.decodeLine(data).get(1);
+            int robotCharge = Integer.parseInt(fileIO.decodeLine(data).get(2));
             robots.add(robotFactory(robotType, robotName, robotCharge));
         }
         return robots;
     }
 
-    private Robot robotFactory(String robotType, String robotName, String robotCharge) {
+    private Robot robotFactory(RobotTypes robotType, String robotName, int robotCharge) {
 
-        if (robotType.equals())
+        if (robotType.equals(RobotTypes.ECO)) {
+            return new Eco(robotName, robotCharge);
+        }
+        if (robotType.equals(RobotTypes.MAC)) {
+            return new Mac(robotName, robotCharge);
+        }
+        if (robotType.equals(RobotTypes.PRO)) {
+            return new Pro(robotName, robotCharge);
+        }
 
+        return null;
     }
 
-    private List<int[]> getDailyTransport(MyFileWriter fileIO){
+    private List<int[]> getDailyTransport(MyFileWriter fileIO) {
         List<String> datas = fileIO.readFile("robotsdailytransport.txt");
         List<int[]> dailyTransports = new ArrayList<>();
         for (String data : datas) {
@@ -72,8 +72,6 @@ public class SimulationFromFile {
         }
         return dailyTransports;
     }
-
-
 
 
 }

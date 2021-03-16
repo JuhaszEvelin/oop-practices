@@ -33,6 +33,8 @@ public class Simulation {
                 new Eco("E12", 4)
         };
 
+        System.out.println(" ~~~~~~~ Simulation from inner DB started  ~~~~~~~ ");
+
         for (int i = 0; i < dailyTransport.length; i++) {
             int dailyItems = dailyTransport[i][1];
             int dailyCharge = dailyTransport[i][0];
@@ -46,8 +48,11 @@ public class Simulation {
             }
             System.out.println();
         }
-    }
 
+        System.out.println(" ~~~~~~~ Simulation from inner DB ended ~~~~~~~ ");
+        System.out.println();
+
+    }
 
 
 }

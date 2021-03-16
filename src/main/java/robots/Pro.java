@@ -5,7 +5,7 @@ public class Pro extends Robot {
         super(name, charge);
         this.maxCapacity = 8;
         this.maxCharge = 12;
-        this.type = "PRO";
+        this.type = RobotTypes.PRO;
     }
 
     @Override

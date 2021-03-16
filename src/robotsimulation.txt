@@ -1,0 +1,36 @@
+< DAY 1 >
+<Name: R2> <Type: MAC> <Charge: 0<MaxCharge: 10><MaxCapacity: 10><MaxTransportCapacityViaCharge: 7><ItemToTransport: 7><Restitem: 13
+
+<Name: 3CPO> <Type: ECO> <Charge: 1<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 8><ItemToTransport: 6><Restitem: 7
+
+<Name: BB8> <Type: PRO> <Charge: 3<MaxCharge: 12><MaxCapacity: 8><MaxTransportCapacityViaCharge: 2><ItemToTransport: 2><Restitem: 0
+
+<Name: E12> <Type: ECO> <Charge: 4<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 0><ItemToTransport: 0><Restitem: 0
+
+< DAY 2 >
+<Name: R2> <Type: MAC> <Charge: 0<MaxCharge: 10><MaxCapacity: 10><MaxTransportCapacityViaCharge: 2><ItemToTransport: 2><Restitem: 30
+
+<Name: 3CPO> <Type: ECO> <Charge: 0<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 6><ItemToTransport: 6><Restitem: 24
+
+<Name: BB8> <Type: PRO> <Charge: 0<MaxCharge: 12><MaxCapacity: 8><MaxTransportCapacityViaCharge: 0><ItemToTransport: 0><Restitem: 19
+
+<Name: E12> <Type: ECO> <Charge: 1<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 8><ItemToTransport: 6><Restitem: 13
+
+< DAY 3 >
+<Name: R2> <Type: MAC> <Charge: 0<MaxCharge: 10><MaxCapacity: 10><MaxTransportCapacityViaCharge: 5><ItemToTransport: 5><Restitem: 28
+
+<Name: 3CPO> <Type: ECO> <Charge: 1<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 8><ItemToTransport: 6><Restitem: 22
+
+<Name: BB8> <Type: PRO> <Charge: 0<MaxCharge: 12><MaxCapacity: 8><MaxTransportCapacityViaCharge: 0><ItemToTransport: 0><Restitem: 17
+
+<Name: E12> <Type: ECO> <Charge: 1<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 8><ItemToTransport: 6><Restitem: 11
+
+< DAY 4 >
+<Name: R2> <Type: MAC> <Charge: 0<MaxCharge: 10><MaxCapacity: 10><MaxTransportCapacityViaCharge: 3><ItemToTransport: 3><Restitem: 24
+
+<Name: 3CPO> <Type: ECO> <Charge: 1<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 8><ItemToTransport: 6><Restitem: 18
+
+<Name: BB8> <Type: PRO> <Charge: 0<MaxCharge: 12><MaxCapacity: 8><MaxTransportCapacityViaCharge: 0><ItemToTransport: 0><Restitem: 15
+
+<Name: E12> <Type: ECO> <Charge: 1<MaxCharge: 4><MaxCapacity: 6><MaxTransportCapacityViaCharge: 8><ItemToTransport: 6><Restitem: 9
+

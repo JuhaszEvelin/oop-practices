@@ -29,7 +29,7 @@ public class MyFileWriter {
         return result;
     }
 
-    public void writeFile(String fileName, List<String> data) {
+    public void writeFile(String fileName, String data) {
         File file = new File("src/" + fileName);
         try {
             file.delete();
@@ -38,9 +38,7 @@ public class MyFileWriter {
             System.out.println("There was an error! " + e);
         }
         try (FileWriter fileWriter = new FileWriter(file, true)) {
-            for (String record : data) {
-                fileWriter.append(record);
-            }
+            fileWriter.append(data);
         } catch (IOException e) {
             System.out.println("There was an error! " + e);
         }

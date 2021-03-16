@@ -1,4 +1,4 @@
-Mac;R2;4;
-Eco;3CPO;3;
-Pro;BB8;10;
-Eco;E12;4;
+MAC;R2;4;
+ECO;3CPO;3;
+PRO;BB8;10;
+ECO;E12;4;

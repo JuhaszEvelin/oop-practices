@@ -1,9 +1,14 @@
 package robots;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public abstract class Robot {
 
-    protected String name;
-    public String type;
+    protected String robotName;
+    public RobotTypes type;
     protected int charge;
     protected int maxCharge;
     protected int maxCapacity;
@@ -12,9 +17,8 @@ public abstract class Robot {
     public static int restItem;
 
     public Robot(String name, int charge) {
-        this.name = name;
+        this.robotName = name;
         this.charge = charge;
-
     }
 
     public abstract void transport(int charge, int item);
@@ -22,14 +26,12 @@ public abstract class Robot {
     @Override
     public String toString() {
         return
-                "<Name: " + name + "> <Type: " + type + "> <Charge: " + charge +
+                "<Name: " + robotName + "> <Type: " + type + "> <Charge: " + charge +
                         "<MaxCharge: " + maxCharge +
                         "><MaxCapacity: " + maxCapacity +
                         "><MaxTransportCapacityViaCharge: " + maxTransportCapacityViaCharge +
                         "><ItemToTransport: " + itemToTransport +
-                        "><Restitem: " + restItem;
+                        "><Restitem: " + restItem + System.lineSeparator();
     }
-
-
 
 }

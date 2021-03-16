@@ -5,7 +5,7 @@ public class Mac extends Robot {
         super(name, charge);
         this.maxCapacity = 10;
         this.maxCharge = 10;
-        this.type = "MAC";
+        this.type = RobotTypes.MAC;
     }
 
     @Override
